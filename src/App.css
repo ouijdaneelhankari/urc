@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+.navigation-bar {
+  text-align: center;
+}
+
+.horizontal-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.horizontal-menu li {
+  margin-right: 20px;
+}
+
+.horizontal-menu a {
+  text-decoration: none;
+  color: rgb(128, 122, 122)ece;
+  font-weight: bold;
+}
+
+.horizontal-menu a:hover {
+  color: #007bff; /* Change the color on hover as desired */
+}
+/* App.css */
+
+.navigation-bar {
+  text-align: center;
+  background-color: rgb(124, 118, 118)ece;; /* Ajout d'une couleur de fond */
+  padding: 10px; /* Ajout d'un espace intérieur */
+}
+
+.horizontal-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.horizontal-menu li {
+  margin-right: 20px;
+}
+
+.horizontal-menu a {
+  text-decoration: none;
+  color: #fff; /* Couleur du texte */
+  font-weight: bold;
+  font-size: 16px; /* Taille de la police */
+}
+
+.horizontal-menu a:hover {
+  color: #007bff;
+}
+
+/* Ajout d'un style pour le séparateur */
+.horizontal-menu li:not(:last-child):after {
+  content: '|';
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* Changement de style lorsqu'un lien est actif */
+.horizontal-menu a:active,
+.horizontal-menu a:focus,
+.horizontal-menu a:visited {
+  color: rgb(23, 133, 91); /* Couleur différente pour les liens actifs/visités */
+}
+
+

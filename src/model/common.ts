@@ -2,6 +2,15 @@ import {CustomError} from "./CustomError";
 
 export const AUTHENT_HEADER = "Authentication";
 export const BEARER = "Bearer ";
+export interface Message {
+    messageId: number;
+    content: string;
+    senderId: number;
+    timestamp: Date;
+  }
+  
+  // Votre code existant
+
 
 export interface User {
     user_id: number;
